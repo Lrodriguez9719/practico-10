@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Lista de Usuarios</h1>
+  <ul>
+    {{#each usuarios}}
+      <li>
+        <span class="user-name">{{this.nombre}}</span>
+        -
+        <span class="user-age">Tiene {{this.edad}} años</span>
+      </li>
+    {{/each}}
+  </ul>
+</div>

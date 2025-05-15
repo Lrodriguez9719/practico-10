@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Bienvenido a la pagina de inicio</h1>
+  <p>Por favor llene el siguiente formulario:</p>
+  <form id="userForm" action="/submit" method="POST">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="nombre" required />
+    <div id="nameError" class="error" style="display: none;">El nombre es requerido.</div>
+
+    <label for="age">Edad:</label>
+    <input type="number" id="age" name="edad" required />
+    <div id="ageError" class="error" style="display: none;">
+      La edad es requerida y debe ser un número mayor
+      que cero.
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+</div>
